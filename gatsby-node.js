@@ -11,8 +11,8 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "@images": path.resolve(__dirname, "src/images"),
-        "@styles": path.resolve(__dirname, "src/styles/styles.js"),
+        "@assets": path.resolve(__dirname, "src/assets"),
+        "@styles": path.resolve(__dirname, "src/styles"),
         "@constants": path.resolve(__dirname, "src/constants"),
         "@utils": path.resolve(__dirname, "src/utils"),
         "@common": path.resolve(__dirname, "src/components/common"),
@@ -31,7 +31,7 @@ exports.createPages = async ({ actions }) => {
   const { createPage } = actions
   createPage({
     path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
+    component: require.resolve("./src/templates/using-dsg.jsx"),
     context: {},
     defer: true,
   })

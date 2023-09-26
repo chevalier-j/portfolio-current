@@ -1,13 +1,13 @@
 /*
  * path: /src/components/common/navbar.jsx
  */
-import { useState } from "react"
+import React, { useState } from "react"
 // import { Link } from "react-router-dom"
 import { Link } from "gatsby"
 import { navLinks } from "@constants"
 // import { logo, menu, close } from '@assets'
 import { menu, close } from "@assets"
-import { styles } from "@styles"
+import { styles } from "@styles/styles"
 
 const Navbar = ({ siteTitle }) => {
   const [active, setActive] = useState("")
