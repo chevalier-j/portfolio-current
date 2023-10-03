@@ -8,7 +8,7 @@ Alignment of elements (mobile), navbar links, planet model propotions vs form, b
 
 Links to github (make repos public).
 
-Apply SEO component.
+SEO component.
 
 Shortcuts.
 
